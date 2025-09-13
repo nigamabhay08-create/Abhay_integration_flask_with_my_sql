@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - SRDT{% endblock %}
+{% block content %}
+  <h2>Dashboard</h2>
+  <p>Welcome back, {{ session.get('username') }}!</p>
+  <p>This is a protected page — you must be logged in to see it.</p>
+{% endblock %}

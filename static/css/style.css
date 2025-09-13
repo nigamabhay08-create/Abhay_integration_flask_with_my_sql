@@ -1,0 +1,98 @@
+/* simple, minimal styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background: #f6f7fb;
+  color: #222;
+}
+
+.navbar {
+  background: #2b3a67;
+  color: #fff;
+  padding: 12px 0;
+}
+
+.nav-inner {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 10px;
+}
+
+.container {
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 4px 14px rgba(30,30,30,0.06);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button, .button {
+  background: #2b3a67;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 6px;
+}
+
+.button.outline {
+  background: transparent;
+  color: #2b3a67;
+  border: 1px solid #2b3a67;
+}
+
+.alert {
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+/* categories from flash: success, danger, warning, info */
+.alert.success { background: #d4f6d6; color: #084b10; }
+.alert.danger  { background: #ffd6d6; color: #701212; }
+.alert.warning { background: #fff3cd; color: #704d00; }
+.alert.info    { background: #d9ecff; color: #073b66; }

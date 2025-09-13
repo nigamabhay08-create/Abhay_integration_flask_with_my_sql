@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Home - SRDT{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h1>Welcome to SRDT</h1>
+  <p>A simple demo with login/signup and a navbar.</p>
+
+  {% if not session.get('user_id') %}
+    <p>
+      <a class="button" href="{{ url_for('signup') }}">Create an account</a>
+      <a class="button outline" href="{{ url_for('login') }}">Login</a>
+    </p>
+  {% else %}
+    <p>
+      Hello, <strong>{{ session.get('username') }}</strong> — go to
+      <a href="{{ url_for('dashboard') }}">your dashboard</a>.
+    </p>
+  {% endif %}
+</div>
+{% endblock %}
